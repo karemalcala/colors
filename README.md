@@ -1,14 +1,13 @@
-# Nombre: Colors
+# Colors
 
-aplicación pensada para resolver el problema de accesibilidad a colores para todo el equipo,
-se representa la solución en paginas de 6 colores que al hacer click permite copiar el codigo del color al portapapeles.
+Aplicación pensada para resolver el problema de accesibilidad a colores para todo el equipo,
+se representa la solución en paginas de 6 colores por vez, al hacer click sobre el color permite copiar el codigo del color al portapapeles.
 
-Las tecnologias utilizadas fueron:
+# Las tecnologias utilizadas fueron:
+
 Angular-Cli version 9.1.6
 Typescript version 3.8.3
 SCSS 
-
-# A continuación se muestra como instalar dependencias y correr el proyecto
 
 ## Instalar dependencias
 
@@ -18,7 +17,7 @@ SCSS
 
 ## Desplegar servidor
 
-  comando: `npm start` el servidor corre en `http://localhost:8080/`. La aplicación automaticamente renderizara cualquier cambio en los archivos.
+  comando: `npm start` el servidor corre en `http://localhost:3001/`.
 
 ## Build
 
