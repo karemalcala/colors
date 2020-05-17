@@ -5,9 +5,12 @@ se representa la solución en paginas de 6 colores por vez, al hacer click sobre
 
 # Las tecnologias utilizadas fueron:
 
-Angular-Cli version 9.1.6
-Typescript version 3.8.3
-SCSS 
+`Angular-Cli version 9.1.6`
+`Typescript version 3.8.3`
+`SCSS` 
+
+`NodeJs`
+`ExpressJS`
 
 ## Instalar dependencias
 
