@@ -9,9 +9,7 @@ import { AppComponent } from './app.component';
 import { SectionMainComponent } from './components/section-main/section-main.component';
 import { SectionHeaderComponent } from './components/section-header/section-header.component';
 import { SectionFooterComponent } from './components/section-footer/section-footer.component';
-import { TitleComponent } from './components/title/title.component';
 import { ColorComponent } from './components/color/color.component';
-import { PaginationColorsComponent } from './components/pagination-colors/pagination-colors.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +17,7 @@ import { PaginationColorsComponent } from './components/pagination-colors/pagina
     SectionMainComponent,
     SectionHeaderComponent,
     SectionFooterComponent,
-    TitleComponent,
     ColorComponent,
-    PaginationColorsComponent,
   ],
   imports: [
     BrowserModule,

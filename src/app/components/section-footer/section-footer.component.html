@@ -1,3 +1,6 @@
 <footer class="footer">
-  <app-pagination-colors></app-pagination-colors>
+  <section class="pagination">
+    <p class="pagination__btn" (click)="previous()" [ngClass]="{'disable': !canGoToPrevious()}"><i class="fas fa-angle-left"></i> Anterior</p>
+    <p class="pagination__btn" (click)="next()" [ngClass]="{'disable': !canGoToNext()}">Siguiente <i class="fas fa-angle-right"></i></p>
+  </section>
 </footer>

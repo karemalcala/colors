@@ -1,5 +1,5 @@
 <div class="grid">
   <app-section-header class="grid__section"></app-section-header>
-  <app-section-main class="grid__section"></app-section-main>
-  <app-section-footer class="grid__section"></app-section-footer>
+  <app-section-main class="grid__section" [colors]="colors"></app-section-main>
+  <app-section-footer class="grid__section" (changePageActual)="updatePageActual($event)" [actualPage]="pageActual" [totalPage]="pageTotal"></app-section-footer>
 </div>

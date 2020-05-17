@@ -7,7 +7,7 @@
       <p class="color--code">{{code}}</p>
     </ng-container>
     <ng-template #elseTemplate>
-      <p class="copied">¡Copiado!</p>
+      <p class="copied" [ngClass]="{'jingle-null': copy}">¡Copiado!</p>
     </ng-template>
   </div>
 

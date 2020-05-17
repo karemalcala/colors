@@ -7,8 +7,14 @@
   box-shadow: 0 3px 8px 2px #0000002e;
   transition: all .3s;
 
+  @media screen and(max-width: 767.98px){
+    min-height: 350px;
+  }
+
   &:hover{
-    transform: scale(1.05);
+    @media screen and(min-width: 767.98px){
+      transform: scale(1.05);
+    }
   }
 
   .year, .date{
@@ -37,7 +43,8 @@
       width: fit-content;
       margin: auto;
       background-color: rgba(0,0,0,.3);
-      padding: 5px 10px;
+      padding: 6px 12px;
+      border-radius: 7px;
     }
   }
 

@@ -5,7 +5,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 9% 1fr 8%;
-  overflow: hidden;
+
+  @media screen and(min-width: 767.98px){
+    overflow: hidden;
+  }
 
   &__section{
     padding: 0;

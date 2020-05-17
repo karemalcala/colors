@@ -3,11 +3,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   background-color: #fff;
   padding: 20px;
 
   @media screen and(max-width: 767.98px){
     justify-content: center;
+    height: auto;
   }
 
   &__item{
@@ -19,6 +21,7 @@
     @media screen and(max-width: 767.98px){
       width: 100%;
       margin-bottom: 12px;
+      max-height: 2300px;
     }
   }
 

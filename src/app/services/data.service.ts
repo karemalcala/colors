@@ -9,8 +9,8 @@ export class DataService {
 
   constructor(private Http: HttpClient) { }
 
-  getData(query: string): Observable<any> {
-    const urlApi = 'https://reqres.in/api/colors?page=' + query;
-    return this.Http.get<any>(urlApi + query);
+  getData(query: number): Observable<any> {
+    const urlApi = `https://reqres.in/api/colors?page=${query}`;
+    return this.Http.get<any>(urlApi);
   }
 }

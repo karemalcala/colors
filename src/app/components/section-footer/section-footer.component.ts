@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output} from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-section-footer',
@@ -7,22 +8,44 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SectionFooterComponent implements OnInit {
 
+  @Output () changePageActual = new EventEmitter();
+
   @Input() actualPage: number;
   @Input() totalPage: number;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+    console.log(this.actualPage, this.totalPage);
   }
 
-  next(): number{
+  next(): void{
     console.log(`En next: estoy ${this.actualPage}, voy a ${this.totalPage}`);
-    if (this.actualPage < this.totalPage) return this.actualPage += 1;
+    if (this.actualPage < this.totalPage) {
+      this.actualPage += 1;
+      this.emitEvent();
+    }
   }
 
-  previous(): number{
+  previous(): void{
     console.log(`En previos: estoy ${this.actualPage}, voy a ${this.actualPage - 1}`);
-    if (this.actualPage > 1) return this.actualPage -= 1;
+    if (this.actualPage > 1){
+      this.actualPage -= 1;
+      this.emitEvent();
+    }
+  }
+
+  emitEvent(): void{
+    this.changePageActual.emit(this.actualPage);
+  }
+
+  canGoToNext(): boolean{
+    return this.actualPage < this.totalPage;
+  }
+
+  canGoToPrevious(): boolean{
+    return this.actualPage > 1;
   }
 
 }
