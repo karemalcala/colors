@@ -16,7 +16,6 @@ se representa la solución en paginas de 6 colores por vez, al hacer click sobre
 
   `npm i`
 
-  `npm i @angular/cli`
 
 ## Desplegar servidor
 
