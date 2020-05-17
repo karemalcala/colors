@@ -18,9 +18,11 @@ SCSS
 
 ## Desplegar servidor
 
-  comando: `npm start` el servidor corre en `http://localhost:4200/`. La aplicación automaticamente renderizara cualquier cambio en los archivos.
+  comando: `npm start` el servidor corre en `http://localhost:8080/`. La aplicación automaticamente renderizara cualquier cambio en los archivos.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng build` para construir el proyecto. la construción se almacenara en la carpeta `dist/`. Use la bandera `--prod` para construir en producción.
 
+## Url final de aplicación
+https://multiplica-colors.herokuapp.com/
